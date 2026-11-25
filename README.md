@@ -2,7 +2,7 @@
 
 This repository contains the data and code for the following study:
 
-> Esra Kocak, Gokhan Onder Aksu, Seda Keskin. *Large-Scale Screening of Metal-Organic Frameworks and Covalent Organic Frameworks for NH₃ Storage and Separation.* Submitted to *ACS Materials Au* (2026).
+> Esra Kocak, Gokhan Onder Aksu, Seda Keskin. *Large-Scale Screening of Metal-Organic Frameworks and Covalent Organic Frameworks for NH₃ Storage and Separation.* Manuscript submitted for publication (2026).
 
 Department of Chemical and Biological Engineering, Koç University, Istanbul, Turkey.
 
@@ -243,7 +243,7 @@ All scripts use absolute Windows paths (`C:/Users/.../MOF-COF-NH3-Storage-Separa
 
 If you use these data or scripts, please cite:
 
-> E. Kocak, G. O. Aksu, S. Keskin. Large-Scale Screening of Metal-Organic Frameworks and Covalent Organic Frameworks for NH₃ Storage and Separation. Submitted to *ACS Materials Au*, 2026.
+> E. Kocak, G. O. Aksu, S. Keskin. Large-Scale Screening of Metal-Organic Frameworks and Covalent Organic Frameworks for NH₃ Storage and Separation. Manuscript submitted for publication, 2026.
 
 The full reference will be updated after publication.
 
