@@ -10,7 +10,7 @@ Department of Chemical and Biological Engineering, Koç University, Istanbul, Tu
 
 ## Summary of the study
 
-We screened more than 28,000 synthesized and hypothetical metal-organic frameworks (MOFs) and covalent organic frameworks (COFs) for NH₃ storage and NH₃/N₂/H₂ separation. We used molecular simulations together with machine learning (ML). Four material families were studied:
+We screened more than 76,000 synthesized and hypothetical metal-organic frameworks (MOFs) and covalent organic frameworks (COFs) for NH₃ storage and NH₃/N₂/H₂ separation. We used molecular simulations together with machine learning (ML). Four material families were studied:
 
 | Material family | Source database | Database size | Single-component NH₃ simulations | NH₃/N₂/H₂ mixture simulations |
 |---|---|---:|---:|---:|
