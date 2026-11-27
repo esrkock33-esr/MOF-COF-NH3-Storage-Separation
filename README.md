@@ -119,18 +119,18 @@ One subfolder per material family under `UptakeModels-Shap/` (target: `NH3 - 1 b
 | `TPOT_Pipeline-Gen10-Pop50-Random42-Cv5-*.py` | Best pipeline exported by TPOT (settings in `TPOT Input Parameters.csv`). The script refits it on an 80/20 train/test split (random_state = 42), prints R², RMSE, MAE, and SRCC, writes the simulated-vs-predicted table, and draws the parity plot. The log APS scripts draw parity plots for both log APS and APS. |
 | `*_Simulated_vs_Predicted.xlsx` | Output of the TPOT script: descriptors, `Set` (Train/Test), simulated value, and ML-predicted value |
 | `shapanalysis*.py` | Refits the same pipeline and draws the SHAP summary plot for the test set |
-| `*_SHAP_importance.csv` | Mean absolute SHAP value of each descriptor (`Rank`, `Feature`, `mean_abs_SHAP`, `share_%`, `cumulative_%`). Descriptors were added to the SHAP panels of Figures 4 and 7 until they covered at least 90% of the total. |
+| `*_SHAP_importance.csv` | Mean absolute SHAP value of each descriptor (`Rank`, `Feature`, `mean_abs_SHAP`, `share_%`, `cumulative_%`). The SHAP panels in Figures 4 and 7 show at least six descriptors, and more were added when needed to reach 90% of the total mean \|SHAP\|. |
 
 Selected models and test-set accuracy:
 
-| Family | NH₃ uptake model (final estimator) | Test R² | log APS model (final estimator) | Test R² |
-|---|---|---:|---|---:|
-| CoRE MOF | Random Forest | 0.922 | XGBoost | 0.985-1 |
-| hypoMOF | Random Forest | 0.893 | Random Forest | 0.985-1 |
-| CoRE COF | Random Forest | 0.652 | XGBoost | 0.985-1 |
-| hypoCOF | XGBoost | 0.856 | XGBoost | 0.985-1 |
+| Family | NH₃ uptake model (final estimator) | Uptake test R² | log APS model (final estimator) |
+|---|---|---:|---|
+| CoRE MOF | Random Forest | 0.922 | XGBoost |
+| hypoMOF | Random Forest | 0.893 | Random Forest |
+| CoRE COF | Random Forest | 0.652 | XGBoost |
+| hypoCOF | XGBoost | 0.856 | XGBoost |
 
-The full pipelines with stacked estimators and hyperparameters are given in Tables S4 and S5 and in the scripts.
+All log APS models have test R² values between 0.985 and 0.997. The full pipelines with stacked estimators and hyperparameters are given in Tables S4 and S5 and in the scripts.
 
 ### `Unseen/`
 
@@ -183,7 +183,7 @@ The same values appear in the script names (`Gen10-Pop50-Random42-Cv5`).
 | `Sacc (m2/g)` | Accessible surface area (probe radius 1.82 Å) | m²/g |
 | `Porosity` | Porosity (void fraction) | - |
 | `Pore Volume (cm3/g)` | Pore volume | cm³/g |
-| `KNH3`, `KN2`, `KH2 (mol/kg/Pa)` | Henry's constants at infinite dilution, 298 K | mol/kg/Pa |
+| `KNH3`, `KN2`, `KH2 (mol/kg/Pa)` | Henry's constants (Widom insertion) | mol/kg/Pa |
 | `Qst-NH3`, `Qst-N2`, `Qst-H2 (kJ/mol)` | Isosteric heats of adsorption at infinite dilution | kJ/mol |
 | `KNH3/KN2`, `KNH3/KH2` | Ratios of Henry's constants | - |
 | `%C`, `%H`, `%N`, `%O`, `%Halogen`, `%Metal`, `%Metalloid` | Atomic percentages | % |
